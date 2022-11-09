@@ -14,17 +14,21 @@ let todoList = [
 
 const render = (arr) => {
     let list = "";
+    let completedTotal = 0
     todoUl.innerHTML = "";
     arr.forEach((item) => {
       let status = ""
       if(item.completed){
         status = "checked"
+        completedTotal ++
       }
         let template = `<li>${item.id} ${item.name} <input data-update="${item.id}" type="checkbox" ${status}> <button data-delete="${item.id}">❌</button></li>`;
         list += template;
     });
     todoUl.innerHTML = list;
     totalTodos.textContent = arr.length;
+    completedTodos.textContent = completedTotal
+
 };
 render(todoList);
 
@@ -62,7 +66,10 @@ const updateTodo = (e) => {
     todoList[index].completed = !todoList[index].completed
     // console.log(todoList[index])
 
+    // const checkbox = document.querySelector("[data-update]")
+    // checkbox.addEventListener("click", () => )
     // console.log(checkbox.checked)
+    render(todoList)
   }
 }
 
