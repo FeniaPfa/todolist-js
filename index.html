@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Desafio #</title>
+
+        <!-- Normalize css -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+            integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body>
+        <main>
+        <h1>ToDo List</h1>
+            <section class="insert-todos">
+
+                <form id="todoForm">
+                    <input type="text" name="" id="todoInput">
+                    <button id="todoBtn">Agregar</button>
+                </form>
+
+            </section>
+
+            <section class="todo-container">
+
+                <div class="todo-info">
+
+                    <p>Total: <span id="total"></span></p>
+                    <p>Realizadas <span id="complete"></span></p>
+
+                </div>
+
+                <div class="todo-list">
+                    <ul id="toDos">
+
+                    </ul>
+                </div>
+            </section>
+
+</main>
+    <script src="assets/js/main.js"></script>
+    </body>
+</html>
