@@ -1,0 +1,113 @@
+:root {
+    --main: #31446c;
+    --primary: #878af5;
+    --secondary: #666af6;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: var(--main);
+    background: linear-gradient(
+        to right,
+        rgb(165, 180, 252),
+        rgb(192, 132, 252)
+    );
+    height: 100vh;
+}
+
+ul,
+ul li {
+    list-style: none;
+    padding: 0;
+}
+
+main {
+    background: #ffffffcc;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: max-content;
+    margin: 2rem auto;
+    border-radius: 1.5rem;
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+}
+
+.insert-todos input {
+    border: 1px solid silver;
+    padding: 0.5rem;
+    border-radius: 7px;
+}
+
+.insert-todos input:focus {
+    outline: 2px solid var(--secondary);
+}
+
+.insert-todos button {
+    background: var(--primary);
+    border: none;
+    border-radius: 0.7rem;
+    padding: 0.7rem;
+    color: #fff;
+    cursor: pointer;
+}
+.insert-todos button:hover {
+    background: var(--secondary);
+}
+
+.todo-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.todo-header,
+.todo-info span {
+    font-weight: 700;
+    color: var(--secondary);
+}
+
+.todo-list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.todo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.todo p {
+    flex-grow: 1;
+  }
+  
+  .completed-todo{
+    text-decoration: line-through;
+}
+
+.todo-header:nth-child(1) {
+    margin-right: 1rem;
+}
+
+.todo-id {
+    margin-right: 1.5rem;
+}
+
+.todo-btns {
+    margin-left: 1rem;
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.todo-check {
+    width: 20px;
+    height: 20px;
+    accent-color: var(--secondary);
+}

@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Desafio #</title>
+        <title>Todo list</title>
 
         <!-- Normalize css -->
         <link
@@ -15,37 +15,35 @@
             referrerpolicy="no-referrer"
         />
 
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
         <link rel="stylesheet" href="assets/css/style.css" />
     </head>
     <body>
         <main>
-        <h1>ToDo List</h1>
+            <h1>Todo list</h1>
             <section class="insert-todos">
-
                 <form id="todoForm">
-                    <input type="text" name="" id="todoInput">
+                    <input type="text" id="todoInput" placeholder="Ingresa una tarea..."/>
                     <button id="todoBtn">Agregar</button>
                 </form>
-
             </section>
 
             <section class="todo-container">
-
                 <div class="todo-info">
-
                     <p>Total: <span id="total"></span></p>
-                    <p>Realizadas <span id="complete"></span></p>
-
+                    <p>Realizadas: <span id="complete"></span></p>
                 </div>
 
                 <div class="todo-list">
-                    <ul id="toDos">
-
-                    </ul>
+                    <span class="todo-header">ID</span><span class="todo-header">Tarea:</span>
+                    <ul id="toDos"></ul>
                 </div>
             </section>
-
-</main>
-    <script src="assets/js/main.js"></script>
+        </main>
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
