@@ -20,11 +20,11 @@ const render = (arr) => {
     todoUl.innerHTML = "";
     arr.forEach((item) => {
         let status = "";
-        let completedStyle = ""
+        let completedStyle = "";
         if (item.completed) {
             status = "checked";
             completedTotal++;
-            completedStyle = `class="completed-todo"`
+            completedStyle = `class="completed-todo"`;
         }
         let template = `<li class="todo"><span class="todo-id">${item.id}</span><p ${completedStyle}>${item.name}</p><div class="todo-btns"><input class="todo-check" data-update="${item.id}" type="checkbox" ${status}> <button data-delete="${item.id}">❌</button></div></li>`;
         list += template;
@@ -32,7 +32,7 @@ const render = (arr) => {
     todoUl.innerHTML = list;
     totalTodos.textContent = arr.length;
     completedTodos.textContent = completedTotal;
-    console.log(todoList)
+    console.log(todoList);
 };
 render(todoList);
 
