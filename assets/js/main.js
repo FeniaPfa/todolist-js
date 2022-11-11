@@ -9,7 +9,7 @@ const todoUl = document.getElementById("toDos");
 let todoList = [
     { name: "Hacer ejercicio", id: 1, completed: false },
     { name: "Estudiar", id: 2, completed: false },
-    { name: "Lavar la losa", id: 3, completed: false },
+    { name: "Lavar la loza", id: 3, completed: false },
 ];
 
 let todoId = todoList.length;

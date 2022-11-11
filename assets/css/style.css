@@ -18,6 +18,7 @@ body {
         rgb(192, 132, 252)
     );
     height: 100vh;
+    padding-top: 2rem;
 }
 
 ul,
@@ -34,7 +35,7 @@ main {
     align-items: center;
     gap: 2rem;
     width: max-content;
-    margin: 2rem auto;
+    margin: 0 auto;
     border-radius: 1.5rem;
     box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
 }
@@ -77,17 +78,24 @@ main {
     flex-direction: column;
     gap: 0.2rem;
 }
+.todo button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
 
 .todo {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
+    max-width: 350px;
 }
 .todo p {
     flex-grow: 1;
-  }
-  
-  .completed-todo{
+    word-break: break-all;
+}
+
+.completed-todo {
     text-decoration: line-through;
 }
 
@@ -101,7 +109,7 @@ main {
 
 .todo-btns {
     margin-left: 1rem;
-    gap: 1rem;
+    gap: .5rem;
     display: flex;
     align-items: center;
 }
